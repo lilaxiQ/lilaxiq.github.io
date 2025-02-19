@@ -67,9 +67,10 @@ ul li {
 }
 
 .post {
+    color: #ffffff;
     display: flex;
     align-items: center;
-    background-color: rgba(255,255,255, .7);
+    background-color: rgba(0,0,0, .7);
     position: relative;
     border-radius: 1dvi;
     width: 90vw;
@@ -83,7 +84,7 @@ ul li {
 
 
 .post:hover {
-    background-color: rgba(255,255,255,.8);
+    background-color: rgba(0,0,0,.8);
     box-shadow: 11px 11px 10px rgba(0, 0, 0, .2);
     transform: scale(1.05);
     transform-origin: top;
