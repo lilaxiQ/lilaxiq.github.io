@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)) ,url(../images/bgImage.png);
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+    font-family: "Dela Gothic One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(20px, 1.5dvi, 32px);
+}
+
+header {
+    background-color: rgba(67, 67, 67, 0.533);
+    display: flex;
+    height: 8vh;
+    align-items: center;
+}
+
+nav {
+    width: 95vw;
+}
+
+ul {
+    display: flex;
+    float: left;
+}
+
+ul li {
+    list-style: none;
+    padding-left: 1.4vw;
+}
+
+.link::after {
+    content: '';
+    background-color: rgba(255, 191, 106);
+    width: 100%;
+    height: .3dvi;
+    margin-top: .2dvi;
+    display: block;
+    transition: transform .4s ease-out;
+    transform-origin: bottom right;
+    transform: scale(0);
+}
+
+.link:hover::after {
+    background-color: rgba(255, 191, 106);
+    transition: .8s ease;
+    transform-origin: bottom left;
+    transform: scale(1);
+}
+
+.link:hover {
+    color: rgb(212, 255, 235);
+    transition: .4s ease-in;
+}
+
+.post {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255,255,255, .7);
+    position: relative;
+    border-radius: 1dvi;
+    width: 90vw;
+    height: 40vh;
+    margin-left: 5vw;
+    margin-top: 2vh;
+    box-shadow: 7px 7px 5px rgba(0, 0, 0, .2);
+    transform: scale(1);
+    transition: .5s ease;
+}
+
+
+.post:hover {
+    background-color: rgba(255,255,255,.8);
+    box-shadow: 11px 11px 10px rgba(0, 0, 0, .2);
+    transform: scale(1.05);
+    transform-origin: top;
+}
+
+.post-img {
+    width: 20%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 1dvi;
+    margin-right: 1dvi;
+}
+
+.post-text {
+    width: 80%;
+    font-family: "Geologica", serif;
+    text-align: left;
+    font-size: 1.4dvi;
+}
+
+.copyright-container {
+    font-family: "Geologica", serif;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+}
+
+.copyright-container p {
+    font-family: "Geologica", serif;
+    position: absolute;
+    bottom: 0;
+    left: 50vw;
+}
+
+.krol {
+    width: 12%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
